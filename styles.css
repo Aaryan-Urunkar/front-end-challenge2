@@ -6,15 +6,13 @@ body{
     flex-direction: column;
     align-items:center;
     justify-content:center;
-    /*border: 10px solid mistyrose;*/
 }
 .outer-container{
     background-color: hsl(216, 50%, 16%);
     width: 24%;
     display : flex;
     flex-direction:column;
-    border-radius: 20px;
-    /*border: 10px solid goldenrod;*/   
+    border-radius:20px;
 }
 #NFT{
     border-radius:20px;
@@ -25,6 +23,22 @@ body{
     align-items:center;
     justify-content: center;
     min-height:350px;
+}
+.hidden_image{
+    width:20%;
+    height:39%;
+    border-radius:30px;
+    position:absolute;
+    filter:blur(50px);
+    transition: 100ms filter linear;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hidden_image:hover{
+    filter:none;
+    background-color:cyan;
+    opacity:0.5;
 }
 .NFT_Title{
     order:2;
